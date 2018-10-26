@@ -1,0 +1,28 @@
+program
+    class Main <empty>
+        func foo inttype
+            formals
+                vardef x inttype
+                vardef y inttype
+                vardef z inttype
+            stmtblock
+                vardef s stringtype
+                guarded
+                    guard
+                        array const
+                            intconst 1
+                            intconst 2
+                            intconst 3
+                        return
+                            intconst 0
+                return
+                    varref s
+        static func main inttype
+            formals
+            stmtblock
+                return
+                    call foo
+                        <empty>
+                        intconst 1
+                        intconst 2
+                        intconst 3
